@@ -89,3 +89,10 @@ input_cash = 2560012133
 t9 = timeit.timeit(f"output={find_coins_greedy(input_cash)}")
 t10 = timeit.timeit(f"output={find_min_coins(input_cash)}")
 print(input_cash, t9, t10)
+
+
+input_cash = 113
+dict_greedy = find_coins_greedy(input_cash)
+print("Жадібний алгоритм:", dict_greedy)
+dict_min_coins = find_min_coins(input_cash)
+print("Динамичне прогромуапння:", dict_min_coins)
